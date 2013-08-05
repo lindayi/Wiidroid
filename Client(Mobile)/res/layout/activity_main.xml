@@ -1,0 +1,110 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context=".Main" >
+
+    <!--
+         The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc.
+    -->
+	
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:textColor="#33b5e5"
+        android:textSize="40sp"
+        android:textStyle="bold" /> 
+    
+    <!--
+         This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows.
+    -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true" >
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent" >
+
+            <Button
+                android:id="@+id/dummy_button"
+                style="?buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="kboard"
+                android:text="@string/dummy_button" />
+
+            <Button
+                android:id="@+id/dummy_button2"
+                style="?buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dummy_button2" />
+
+            <Button
+                android:id="@+id/dummy_button3"
+                style="?buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+				android:onClick="swheel"
+                android:text="@string/dummy_button3" />
+        </LinearLayout>
+		<RelativeLayout
+		    xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent">
+
+	        <Button
+	            android:id="@+id/submit"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/socketip"
+	            android:layout_centerHorizontal="true"
+	            android:onClick="connectToPC"
+	            android:text="连接" />
+
+	        <EditText
+	            android:id="@+id/socketip"
+	            android:layout_width="160dp"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_centerVertical="true"
+	            android:ems="15"
+	            android:inputType="text"
+	            android:text="192.168.0.000"
+	            android:textSize="18sp" />
+
+	        <TextView
+	            android:id="@+id/iphint"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_above="@+id/socketip"
+	            android:layout_centerHorizontal="true"
+	            android:text="请输入PC端IP地址"
+	            android:textColor="#33b5e5"
+	            android:textSize="20sp"
+	            android:textStyle="bold" />
+	        
+		</RelativeLayout>
+    </FrameLayout>
+
+</FrameLayout>

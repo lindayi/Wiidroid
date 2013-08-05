@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Wiidroid</string>
+    <string name="dummy_content">WiiDroid\nRemote Ur Lives</string>
+    <string name="dummy_button">键盘模式</string>
+    <string name="dummy_button2">鼠标模式</string>
+    <string name="dummy_button3">方向盘模式</string>
+
+</resources>

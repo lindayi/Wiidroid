@@ -1,0 +1,30 @@
+﻿生成启动时间为 2013/3/30 22:30:17。
+     1>项目“C:\Users\acer\Desktop\挑战杯\windowsAPI\Demo\Demo\Demo.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Release\Demo.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt Demo.c main.c TaskBar.c
+         Demo.c
+         main.c
+     1>main.c(121): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(191) : 参见“strncpy”的声明
+     1>main.c(109): warning C4101: “Input”: 未引用的局部变量
+         TaskBar.c
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Release\Demo.res" Demo.rc 
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\acer\Desktop\挑战杯\windowsAPI\Demo\Release\Demo.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\acer\Desktop\挑战杯\windowsAPI\Demo\Release\Demo.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\acer\Desktop\挑战杯\windowsAPI\Demo\Release\Demo.lib" /MACHINE:X86 /SAFESEH Release\Demo.res
+         Release\Demo.obj
+         Release\main.obj
+         Release\TaskBar.obj
+         正在生成代码
+         已完成代码的生成
+         Demo.vcxproj -> C:\Users\acer\Desktop\挑战杯\windowsAPI\Demo\Release\Demo.exe
+       FinalizeBuildStatus:
+         正在删除文件“Release\Demo.unsuccessfulbuild”。
+         正在对“Release\Demo.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“C:\Users\acer\Desktop\挑战杯\windowsAPI\Demo\Demo\Demo.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.98
